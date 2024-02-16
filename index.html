@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Simple</title>
+    <title>Mi Página con Etiquetas</title>
     <style>
         /* Estilo básico para el ejemplo de grid */
         body {
@@ -15,23 +15,130 @@
     </style>
 </head>
 <body>
-    <h1>Título Principal (h1)</h1>
-    <h2>Subtítulo (h2)</h2>
-    <h3>Subtítulo (h3)</h3>
-    <h4>Subtítulo (h4)</h4>
-    <h5>Subtítulo (h5)</h5>
-    <h6>Subtítulo (h6)</h6>
 
-    <p>Párrafo de texto (p). Aquí puedes escribir tu contenido.</p>
+    <header>
+        <h1>Título del Encabezado (h1)</h1>
+    </header>
 
-    <a href="#enlace">Enlace (a)</a>
+    <nav>
+        <ul>
+            <li><a href="#enlace1">Enlace 1</a></li>
+            <li><a href="#enlace2">Enlace 2</a></li>
+            <li><a href="#enlace3">Enlace 3</a></li>
+        </ul>
+    </nav>
 
-    <button>Botón (button)</button>
+    <main>
+        <section>
+            <h2>Sección Principal (h2)</h2>
+            <p>Contenido principal de la página.</p>
+            <sub>Subíndice (sub): Define un subíndice en el texto.</sub>
+            <sup>Superíndice (sup): Define un superíndice en el texto.</sup>
+            <mark>Texto Resaltado (mark): Resalta el texto en amarillo.</mark>
+            <span class="clase-ejemplo">Texto con Clase (span): Define una sección con clases CSS.</span>
+            <br>Salto de Línea (br): Inserta un salto de línea en el texto.
+        </section>
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-        <span>Elemento 1</span>
-        <span>Elemento 2</span>
-        <span>Elemento 3</span>
-    </div>
+        <article>
+            <h3>Artículo Independiente (h3)</h3>
+            <p>Contenido independiente que puede estar separado del resto.</p>
+        </article>
+    </main>
+
+    <aside>
+        <h4>Contenido Extra (h4)</h4>
+        <p>Información adicional que tiene poca relevancia pero coincide con la web.</p>
+    </aside>
+
+    <footer>
+        <p>Pie de Página (footer) - © 2024 Mi Página con Etiquetas</p>
+    </footer>
+
+    <section>
+        <h2>Tabla (h2)</h2>
+        <table>
+            <caption>Título de la Tabla (caption): Define el título de la tabla.</caption>
+            <colgroup>
+                <col span="2" style="background-color:#f2f2f2">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Encabezado 1 (th)</th>
+                    <th>Encabezado 2 (th)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Celda 1 (td)</td>
+                    <td>Celda 2 (td)</td>
+                </tr>
+                <tr>
+                    <td>Celda 3 (td)</td>
+                    <td>Celda 4 (td)</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Pie de Tabla 1 (td)</td>
+                    <td>Pie de Tabla 2 (td)</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <form>
+        <fieldset>
+            <legend>Título del Conjunto (legend): Define el título del conjunto de elementos del formulario.</legend>
+            <label for="campo">Etiqueta del Campo (label): Define el título de un control en el formulario.</label>
+            <input type="text" id="campo" name="campo">
+            <button type="submit">Enviar (button): Define un botón de envío en el formulario.</button>
+            <select>
+                <option value="opcion1">Opción 1 (option): Define una opción en un menú desplegable.</option>
+                <option value="opcion2">Opción 2 (option): Define otra opción en un menú desplegable.</option>
+            </select>
+            <textarea></textarea>
+        </fieldset>
+    </form>
+
+    <section>
+        <h2>Elementos Multimedia (h2)</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <embed type="application/pdf" src="documento.pdf" width="600" height="400">
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </section>
+
+    <section>
+        <h2>Otras Etiquetas (h2)</h2>
+        <meter value="50" min="0" max="100">50%</meter>
+        <progress value="50" max="100">50%</progress>
+        <datalist id="opciones">
+            <option value="Opción 1">
+            <option value="Opción 2">
+        </datalist>
+        <input list="opciones">
+        <keygen name="clave" challenge="challenge">
+        <output for="campo">Resultado del Cálculo (output): Muestra el resultado de un cálculo.</output>
+        <canvas width="200" height="100" style="border:1px solid #000;"></canvas>
+    </section>
+
+    <section>
+        <h2>Elementos Semánticos (h2)</h2>
+        <bdi>Texto Aparte (bdi): Aísla una parte del texto para formatearla de manera independiente.</bdi>
+        <menu type="context">
+            <command type="command" label="Comando 1"></command>
+            <command type="command" label="Comando 2"></command>
+        </menu>
+        <details>
+            <summary>Detalles (summary): Define el encabezado para detalles que pueden mostrarse u ocultarse.</summary>
+            <p>Información suplementaria que puede ser visible u oculta.</p>
+        </details>
+    </section>
+
 </body>
 </html>
