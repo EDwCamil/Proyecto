@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+
 .carousel {
   margin-top: 66px;
   background-color: #2596be;

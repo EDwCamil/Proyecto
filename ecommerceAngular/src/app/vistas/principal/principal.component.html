@@ -1,3 +1,141 @@
 <app-header></app-header>
-<app-footer></app-footer>
+<!-- ESTE ES EL SLIDER-->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="text-container">
+        <div class="title-container">
+          <h3>
+            ¡Oferta del Día! Obtén un<span class="highlight"> 20% </span>de
+            descuento en todos los productos hoy.
+          </h3>
+        </div>
+        <div class="descrip-container">
+          <p>Ropa/Tecnologia/Accesorios</p>
+        </div>
+        <div class="button-container">
+          <button type="button" class="btn btn-light">Ver promos</button>
+        </div>
+      </div>
+      <img src="assets\compra1.jpg.png" class="d-block w-80" alt="..." />
+    </div>
+    <div class="carousel-item">
+      <div class="text-container">
+        <div class="title-container">
+          <h3>
+            ¡Descubre nuestra nueva colección! Productos exclusivos ahora
+            disponibles
+          </h3>
+        </div>
+        <div class="descrip-container">
+          <p>Ropa/Tecnologia/Accesorios</p>
+        </div>
+        <div class="button-container">
+          <button type="button" class="btn btn-light">
+            ¡Descúbrelos aquí!
+          </button>
+        </div>
+      </div>
+      <img src="assets/compra2.webp.png" class="d-block w-80" alt="..." />
+    </div>
+    <div class="carousel-item">
+      <div class="text-container">
+        <div class="title-container">
+          <h3>
+            Cada compra suma puntos. ¡Canjea tus puntos por descuentos en tu
+            próxima compra!
+          </h3>
+        </div>
+        <div class="descrip-container">
+          <p>Ropa/Tecnologia/Accesorios</p>
+        </div>
+        <div class="button-container">
+          <button type="button" class="btn btn-light">Canjea acá</button>
+        </div>
+      </div>
+      <img src="assets/compra1.webp.png" class="d-block w-80" alt="..." />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
+<div class="body">
+
+  <!--ESTOS SON LOS CONTENEDORES DE INFORMACIÓN-->
+  <div class="container-info">
+    <div class="cont-info1 mt-2">
+      <div class="info col-6">
+        <h6>Precios bajos</h6>
+        <h3>
+          Compra 2 y llévate 1 gratis <br />
+          <span>¡No te pierdas esta oferta especial</span>
+        </h3>
+        <p>Explora un poco más</p>
+      </div>
+      <div class="col-6">
+        <img class="w-80" src="assets/compra1.jpg.png" alt="" />
+      </div>
+    </div>
+
+    <div class="cont-info2 mt-2">
+      <div class="info col-6">
+        <h6>Preciso bajos</h6>
+        <h3>
+          Compra 2 y llévate 1 gratis <br />
+          <span>¡No te pierdas esta oferta especial</span>
+        </h3>
+        <p>Explora un poco más</p>
+      </div>
+      <div class="col-6">
+        <img class="w-80" src="assets/compra2.webp .png.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!--EN ESTA PARTE COLOCAMOS UNA FILA DE IMAGENES-->
+  <div class="container">
+    <h3>Recién llegado</h3>
+    <div class="cards-container">
+      <div class="card" style="width: 18rem">
+        <img src="assets/moda.webp" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="container-img">
+          <img src="assets/electrodomésticos.png" class="card-img-top" alt="..." />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="assets/accesoriosmoda.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--ZONA DE DESCUENTOS-->
+  <div>
+
+  </div>
+</div>
+<app-footer></app-footer>
