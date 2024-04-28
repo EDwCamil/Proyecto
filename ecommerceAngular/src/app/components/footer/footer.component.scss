@@ -327,4 +327,8 @@
       width: 100%;
     }
   }
-  
+  @media (min-width: 1100px) and (max-width: 1700px) {
+    .footer-column{
+      margin: 0 45px !important;
+    }
+  }
