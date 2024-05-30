@@ -13,7 +13,7 @@ body {
   padding-bottom: 2rem;
   display: grid;
   place-items: center;
-  background: #dde1e7;
+  background: #efece8;
   text-align: center;
 }
 
@@ -24,6 +24,10 @@ input {
 }
 
 button {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   text-align: center;
   padding: 10px;
   height: 30px;
@@ -46,10 +50,15 @@ button {
 }
 
 .form-container {
+  border-radius: 15px;
   padding: 2rem;
-  border: 2px solid black;
-  height: 300px;
+  border: 2px solid #adacac;
+  height: 400px;
   width: 30%;
+}
+
+.form-container p{
+  margin-top: 2rem;
 }
 
 // body{
