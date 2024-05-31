@@ -54,14 +54,15 @@
   .nav-item {
     margin-left: 50px;
   }
+
   .search-container {
+    z-index: 1000 !important;
     display: flex;
     max-width: 300px; /* Ajusta el ancho según tus necesidades */
     margin: 20px auto;
     border-radius: 5px;
     overflow: hidden;
   }
-  
   #searchInput {
     background-color: #f0f0f0;
     width: 100%;
@@ -83,12 +84,16 @@
     margin: auto;
   }
   .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     margin: 10px;
     width: 40px;
     height: 30px;
     box-shadow: 3px 3px 5px #888888;
     border-radius: 10px;
+ 
   }
   .body{
     margin-left: auto;

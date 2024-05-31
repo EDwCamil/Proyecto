@@ -1,114 +1,351 @@
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
+}
+
+.carousel {
+  margin-top: 4rem;
+  background-color: #2596be;
+  width: 100%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex !important;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+.carousel-item h3{
+  font-size: xx-large;
+}
+.text-container {
+  justify-content: flex-start;
+  text-align: center;
+  width: 50%;
+  display: grid;
+  padding-right: 5%;
+}
+
+.title-container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: auto;
+  width: 50%;
+  display: flex;
+  color: beige;
+  margin-top: 10%;
+}
+
+.button-container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: auto;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.descrip-container {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 50%;
+  height: 10px;
+  margin-left: auto;
+  color: beige;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.highlight {
+  font-size: 1.2em;
+  /* Tamaño más grande para el porcentaje */
+  font-weight: bold;
+  /* Puedes aplicar negrita u otras propiedades según tu preferencia */
+  color: beige;
+  /* Cambia el color según tus preferencias */
+}
+
+.container-fluid {
+  width: 90% !important;
+}
+
+.nav-item {
+  margin-left: 50px;
+}
+
+.search-container {
+  display: flex;
+  max-width: 300px;
+  /* Ajusta el ancho según tus necesidades */
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#searchInput {
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#searchButton {
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+#searchButton img {
+  width: 18px;
+  /* Ajusta el tamaño del icono según tus necesidades */
+  height: 18px;
+  display: block;
+  margin: auto;
+}
+
+.button {
+  border: none;
+  margin: 10px;
+  width: 40px;
+  height: 30px;
+  box-shadow: 3px 3px 5px #888888;
+  border-radius: 10px;
+}
+
+.body {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.container {
+  margin-top: 2rem !important;
+}
+
+.container-info {
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cont-info1 {
+  margin: 2rem;
+  display: flex;
+  background: linear-gradient(to right, #febb46, #ffd587);
+  box-shadow: 3px 3px 5px #888888;
+  border-radius: 15px;
+  width: 40%;
+  height: 20%;
+}
+
+.cont-info2 {
+  margin: 2rem;
+  display: flex;
+  background: linear-gradient(to right, #7d5d95, #cb9fec);
+  box-shadow: 3px 3px 5px #888888;
+  border-radius: 15px;
+  width: 40%;
+  height: 20%;
+}
+
+.cont-info1 img {
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.cont-info2 img {
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.info {
+  padding-left: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #f0f0f0;
+}
+
+.info span {
+  font-size: medium;
+  font-weight: normal;
+}
+
+.info h6 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.info h3 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.info p {
+  text-decoration: underline;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: none !important;
+  margin: 15px;
+}
+
+.card img {
+  height: 250px;
+  border-radius: 15px;
+}
+
+.search-container {
+  height: 30px;
+  /* Ajusta la altura según tus necesidades */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container-img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #2596be;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #3c4242;
+  padding: 20px 0;
+}
+
+/* Estilos para los enlaces del footer */
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-columns {
+  padding-top: 2rem;
+  justify-content: center;
+  display: flex !important;
+  color: #f0f0f0;
+}
+
+.footer-columns p a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+/* Estilos para la sección de información en el footer */
+.footer-info {
+  margin-bottom: 20px;
+}
+
+/* Estilos para la sección de enlaces del footer */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0 15px;
+}
+
+.footer-column {
+  margin: 0 100px;
+}
+
+.stores {
+  margin-top: 100px;
+}
+
+.stores img {
+  width: 400px;
+}
+
+.social-redes {
+  margin-top: 6rem;
+}
+
+.button-footer {
+  border: none;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.copy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+  width: 90%;
+  border-bottom: #888888 solid 1px;
+  border-top: #888888 solid 1px;
+}
+
+.copy-container p {
+  color: #f0f0f0;
+  margin: 16px 0;
+}
+
+@media (min-width: 1500px) and (max-width: 2100px) {
+  .stores {
+    margin-top: 130px;
   }
-  .carousel {
-    margin-top: 66px;
-    background-color: #2596be;
+
+  .social-redes {
+    position: absolute;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2rem;
   }
-  .carousel-item-next,
-  .carousel-item-prev,
-  .carousel-item.active {
-    display: flex !important;
-  }
+
   .text-container {
-    justify-content: flex-start;
     text-align: center;
     width: 50%;
     display: grid;
   }
-  .title-container {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    margin-left: auto;
-    width: 50%;
-    display: flex;
-    color: beige;
-    margin-top: 10%;
-  }
-  .button-container {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    margin-left: auto;
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-  }
-  .descrip-container {
-    font-size: 20px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    width: 50%;
-    height: 10px;
-    margin-left: auto;
-    color: beige;
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-  }
-  .highlight {
-    font-size: 1.2em; /* Tamaño más grande para el porcentaje */
-    font-weight: bold; /* Puedes aplicar negrita u otras propiedades según tu preferencia */
-    color: beige; /* Cambia el color según tus preferencias */
-  }
-  .container-fluid {
-    width: 90% !important;
-  }
-  .nav-item {
-    margin-left: 50px;
-  }
-  .search-container {
-    display: flex;
-    max-width: 300px; /* Ajusta el ancho según tus necesidades */
-    margin: 20px auto;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  #searchInput {
-    background-color: #f0f0f0;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-  }
-  
-  #searchButton {
-    background-color: #f0f0f0;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #searchButton img {
-    width: 18px; /* Ajusta el tamaño del icono según tus necesidades */
-    height: 18px;
-    display: block;
-    margin: auto;
-  }
-  .button {
-    border: none;
-    margin: 10px;
-    width: 40px;
-    height: 30px;
-    box-shadow: 3px 3px 5px #888888;
-    border-radius: 10px;
-  }
-  .body{
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-  }
-  .container{
-    margin-top: 2rem!important;
-  }
+
   .container-info {
     margin-top: 4rem;
     display: flex;
     width: 100%;
     justify-content: center;
   }
+
   .cont-info1 {
     margin: 2rem;
     display: flex;
@@ -118,6 +355,7 @@ body{
     width: 40%;
     height: 20%;
   }
+
   .cont-info2 {
     margin: 2rem;
     display: flex;
@@ -127,207 +365,40 @@ body{
     width: 40%;
     height: 20%;
   }
-  .cont-info1 img {
-    margin-left: 1rem;
-    width: 100%;
-  }
-  .cont-info2 img {
-    margin-left: 2rem;
-    width: 100%;
-  }
+
   .info {
-    padding-left: 1rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     display: grid;
     justify-content: center;
     align-items: center;
     color: #f0f0f0;
   }
+
   .info span {
-    font-size: medium;
+    font-size: large;
     font-weight: normal;
   }
+
   .info h6 {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 40px;
   }
-  
+
   .info h3 {
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
   }
+
   .info p {
     text-decoration: underline;
   }
-  .card-title {
-    text-align: center;
-  }
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .card {
-    border: none !important;
-    margin: 15px;
-  }
-  .card img {
-    height: 250px;
-    border-radius: 15px;
-  }
-  .search-container {
-    height: 30px; /* Ajusta la altura según tus necesidades */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .container-img {
-    border-radius: 15px;
+
+  .cont-info1 img {
     width: 100%;
-    height: 100%;
-    background-color: #2596be;
   }
-  /* Estilos del footer */
-  footer {
-    background-color: #3c4242;
-    padding: 20px 0;
+
+  .cont-info2 img {
+    width: 100%;
   }
-  
-  /* Estilos para los enlaces del footer */
-  footer a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  .footer-columns {
-    padding-top: 2rem;
-    justify-content: center;
-    display: flex !important;
-    color: #f0f0f0;
-  }
-  .footer-columns p a {
-    text-decoration: none;
-    color: #f0f0f0;
-  }
-  /* Estilos para la sección de información en el footer */
-  .footer-info {
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para la sección de enlaces del footer */
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-links li {
-    margin: 0 15px;
-  }
-  .footer-column {
-  margin: 0 100px;
-  }
-  .stores{
-    margin-top: 100px;
-  }
-  .stores img{
-    width: 400px;
-  }
-  .social-redes{
-    margin-top: 6rem;
-  }
-  .button-footer{
-    border: none;
-    border-radius: 10px;
-    width: 35px;
-    height: 35px;
-    margin-left: 20px;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-  }
-  .copy-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 2rem auto ;
-    width: 90%;
-    border-bottom: #888888 solid 1px;
-    border-top: #888888 solid 1px;
-  }
-  .copy-container p{
-    color: #f0f0f0;
-    margin: 16px 0;
-  }
-  @media (min-width: 1500px) and (max-width: 2100px) {
-    .stores{
-      margin-top: 130px;
-    }
-    .social-redes{
-      position: absolute;
-      width: 100%;
-      margin-top: 2rem;
-    }
-    .text-container {
-      text-align: center;
-      width: 50%;
-      display: grid;
-    }
-    .container-info {
-      margin-top: 4rem;
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    }
-    .cont-info1 {
-      margin: 2rem;
-      display: flex;
-      background: linear-gradient(to right, #febb46, #ffd587);
-      box-shadow: 3px 3px 5px #888888;
-      border-radius: 15px;
-      width: 40%;
-      height: 20%;
-    }
-    .cont-info2 {
-      margin: 2rem;
-      display: flex;
-      background: linear-gradient(to right, #7d5d95, #cb9fec);
-      box-shadow: 3px 3px 5px #888888;
-      border-radius: 15px;
-      width: 40%;
-      height: 20%;
-    }
-    .info {
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      color: #f0f0f0;
-    }
-    .info span {
-      font-size: large;
-      font-weight: normal;
-    }
-    .info h6 {
-      font-weight: bold;
-      margin-top: 40px;
-    }
-  
-    .info h3 {
-      font-weight: bold;
-      font-size: x-large;
-    }
-    .info p {
-      text-decoration: underline;
-    }
-    .cont-info1 img {
-      width: 100%;
-    }
-    .cont-info2 img {
-      width: 100%;
-    }
-  }
-  
+}
