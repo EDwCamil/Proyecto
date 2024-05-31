@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <app-header></app-header>
+  <div class="bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100" style="margin-top: 6rem;">
+    <div class="p-4">
+      <div class="grid grid-cols-12 bg-orange-500 text-white p-2 rounded-t-lg" style="height: 50px; align-items: center;">
+        <div class="col-span-6">DETALLE DEL PRODUCTO</div>
+        <div class="col-span-2">PRECIO</div>
+        <div class="col-span-2">CANTIDAD</div>
+        <div class="col-span-2">ELIMINAR</div>
+      </div>
+      <div class="divide-y divide-zinc-200 dark:divide-zinc-700">
+
+        <div class="grid grid-cols-12 p-4">
+          <div class="col-span-6 flex items-center space-x-4">
+            <img src="https://placehold.co/60x60" alt="Product Image" class="w-16 h-16 object-cover rounded">
+            <div>
+              <div>Celular Iphone 15 de 128GB</div>
+              <div class="text-sm text-zinc-500 dark:text-zinc-400">Color: Gris</div>
+              <div class="text-sm text-zinc-500 dark:text-zinc-400">Marca: APPLE</div>
+            </div>
+          </div>
+          <div class="col-span-2 flex items-center">$3.267.000</div>
+          <div class="col-span-2 flex items-center">
+            <button class="px-2 py-1 border border-zinc-300 dark:border-zinc-600 rounded">-</button>
+            <span class="mx-2">1</span>
+            <button class="px-2 py-1 border border-zinc-300 dark:border-zinc-600 rounded">+</button>
+          </div>
+          <div class="col-span-2 flex items-center justify-center">
+            <button class="text-red-500">🗑️</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 p-4">
+          <div class="col-span-6 flex items-center space-x-4">
+            <img src="https://placehold.co/60x60" alt="Product Image" class="w-16 h-16 object-cover rounded">
+            <div>
+              <div>Consola PS5 825 GB</div>
+              <div class="text-sm text-zinc-500 dark:text-zinc-400">Color: Blanca</div>
+              <div class="text-sm text-zinc-500 dark:text-zinc-400">Marca: SONY</div>
+            </div>
+          </div>
+          <div class="col-span-2 flex items-center">$2.469.900</div>
+          <div class="col-span-2 flex items-center">
+            <button class="px-2 py-1 border border-zinc-300 dark:border-zinc-600 rounded">-</button>
+            <span class="mx-2">1</span>
+            <button class="px-2 py-1 border border-zinc-300 dark:border-zinc-600 rounded">+</button>
+          </div>
+          <div class="col-span-2 flex items-center justify-center">
+            <button class="text-red-500">🗑️</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 p-4">
+          <div class="col-span-6 flex items-center space-x-4">
+            <img src="https://placehold.co/60x60" alt="Product Image" class="w-16 h-16 object-cover rounded">
+            <div>
+              <div>Televisor 55 pulgadas Led Ultra HD - 4K</div>
+              <div class="text-sm text-zinc-500 dark:text-zinc-400">Color: Gris</div>
+              <div class="text-sm text-zinc-500 dark:text-zinc-400">Marca: SAMSUNG</div>
+            </div>
+          </div>
+          <div class="col-span-2 flex items-center">$1.599.900</div>
+          <div class="col-span-2 flex items-center">
+            <button class="px-2 py-1 border border-zinc-300 dark:border-zinc-600 rounded">-</button>
+            <span class="mx-2">1</span>
+            <button class="px-2 py-1 border border-zinc-300 dark:border-zinc-600 rounded">+</button>
+          </div>
+          <div class="col-span-2 flex items-center justify-center">
+            <button class="text-red-500">🗑️</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <h2 class="text-lg font-semibold">Códigos de descuento</h2>
+        <p class="text-sm text-zinc-500 dark:text-zinc-400">¡Ingresa tu código de descuento, si tienes uno!</p>
+        <div class="flex space-x-2 mt-2">
+          <input type="text" placeholder="Código de descuento"
+            class="p-2 border border-zinc-300 dark:border-zinc-600 rounded flex-grow">
+          <button class="px-4 py-2 bg-pink-500 text-white rounded">Aplicar cupón</button>
+        </div>
+        <button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded flex items-center">
+          <span>🛒</span> <span class="ml-2">Seguir comprando</span>
+        </button>
+      </div>
+      <div class="bg-zinc-100 dark:bg-zinc-700 p-4 rounded">
+        <div class="flex justify-between">
+          <span>Sub Total:</span>
+          <span>$7.336.800</span>
+        </div>
+        <div class="flex justify-between font-bold mt-2">
+          <span>Grand Total</span>
+          <span>$7.336.800</span>
+        </div>
+        <button class="mt-4 w-full px-4 py-2 bg-pink-500 text-white rounded">Ir a pagar →</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+<app-footer></app-footer>
+</html>
