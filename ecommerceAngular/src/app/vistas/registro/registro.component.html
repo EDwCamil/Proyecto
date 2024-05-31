@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<app-header></app-header>
+
+<body>
+  <div class="flex flex-col md:flex-row min-h-screen contentRegister">
+    <div class="p-4 loginImg">
+      <img class="rounded-lg w-full h-full object-cover" src="assets/login2.png" alt="Appliances">
+    </div>
+    <div class="p-8 flex flex-col justify-center formRegistro">
+      <h2 class="text-2xl font-bold mb-2">Registrarse</h2>
+      <p class="mb-4 text-zinc-600">Regístrate gratis para acceder a cualquiera de nuestros productos</p>
+      <button class="w-full flex items-center justify-center border border-zinc-300 rounded-lg py-2 mb-4 buttonGoogle">
+        <img src="assets/google.png" alt="Google logo" class="mr-2">
+        Continua con Google
+      </button>
+      <div class="flex items-center my-4">
+        <hr class="flex-grow border-zinc-300">
+        <span class="px-2 text-zinc-500">Ó</span>
+        <hr class="flex-grow border-zinc-300">
+      </div>
+      <form>
+        <label class="block mb-2 text-zinc-700">Correo electrónico</label>
+        <input type="email" placeholder="designer@gmail.com" class="w-full border border-zinc-300 rounded-lg p-2 mb-4">
+        <label class="block mb-2 text-zinc-700">Contraseña</label>
+        <div class="relative">
+          <input type="password" placeholder="********" class="w-full border border-zinc-300 rounded-lg p-2 mb-4 pr-10">
+          <span class="absolute right-3 top-3 text-zinc-500 cursor-pointer">Ocultar</span>
+        </div>
+        <p class="text-zinc-500 text-sm mb-4">Utilice 8 o más caracteres con una combinación de letras, números y
+          símbolos</p>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="terms" class="mr-2">
+          <label for="terms" class="text-zinc-700">Acepta nuestros <a href="#" class="text-blue-500">Términos y
+              condiciones</a> y <a href="#" class="text-blue-500">Política de Privacidad</a></label>
+        </div>
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="newsletter" class="mr-2">
+          <label for="newsletter" class="text-zinc-700">Suscríbete a nuestro boletín mensual</label>
+        </div>
+        <button class="w-full bg-pink-500 text-white rounded-lg py-2 mb-4">Registrarse</button>
+      </form>
+      <p class="text-zinc-600">¿Ya tienes una cuenta? <a href="#" class="text-blue-500">Iniciar Sesión</a></p>
+    </div>
+  </div>
+</body>
+<app-footer></app-footer>
+
+</html>

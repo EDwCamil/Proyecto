@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="flex flex-col min-h-screen">
+    <app-header></app-header>
+    <main class="flex-grow flex flex-col items-center justify-center text-center py-12">
+      <img src="assets/cartVoit.png" alt="Empty Cart" class="mb-6">
+      <h1 class="text-2xl font-bold mb-2">Tu carrito está vacío</h1>
+      <p class="text-zinc-600 mb-6">En Éxito tenemos más de 100 mil productos para que elijas lo que más te gusta.</p>
+      <a [routerLink]="['']" class="bg-pink-500 text-white px-6 py-2 rounded-md">Sigue comprando</a>
+    </main>
+  </div>
+</body>
+<app-footer></app-footer>
+
+</html>

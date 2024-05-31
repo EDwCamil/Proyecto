@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { AppHeader } from "../../components/header/header.component";
 import { AppFooter } from "../../components/footer/footer.component";
 
@@ -7,7 +8,7 @@ import { AppFooter } from "../../components/footer/footer.component";
     standalone: true,
     templateUrl: './carrito.component.html',
     styleUrl: './carrito.component.scss',
-    imports: [AppHeader, AppFooter]
+    imports: [AppHeader, AppFooter,RouterLink,RouterOutlet]
 })
 export class CarritoComponent {
 

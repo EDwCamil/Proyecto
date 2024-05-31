@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { AppHeader } from '../../components/header/header.component';
@@ -15,12 +15,12 @@ import { HttpClient } from '@angular/common/http';
   standalone: true,
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
-  imports: [RouterOutlet, ReactiveFormsModule, CommonModule, AppHeader, AppFooter]
+  imports: [RouterOutlet, ReactiveFormsModule, CommonModule, AppHeader, AppFooter, RouterLink]
 })
 export class AppLogin implements OnInit {
   loginError: string = "";
   loginForm = this.formBuilder.group({
-    email: ['iva@gmail.com', [Validators.required, Validators.email]],
+    email: ['', [Validators.required, Validators.email]],
     password: ['', Validators.required]
   })
   constructor(private formBuilder: FormBuilder, private router: Router, private loginService: LoginService, private http: HttpClient) {
