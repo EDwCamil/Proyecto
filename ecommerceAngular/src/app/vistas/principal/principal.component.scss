@@ -24,12 +24,15 @@ body {
 .carousel-item {
   height: 100%;
 }
+
 .carousel-item img {
   object-fit: cover;
 }
-.carousel-item h3{
+
+.carousel-item h3 {
   font-size: xx-large;
 }
+
 .text-container {
   justify-content: flex-start;
   text-align: center;
@@ -320,6 +323,24 @@ footer a {
 .copy-container p {
   color: #f0f0f0;
   margin: 16px 0;
+}
+
+.contentOff {
+  margin: auto;
+  width: 75%;
+}
+
+.offProduct{
+  width: 400px;
+}
+.offProduct1{
+  width: 400px;
+  margin-left: 11rem;
+}
+
+.imgMoto{
+  width: 50%;
+  margin: auto;
 }
 
 @media (min-width: 1500px) and (max-width: 2100px) {

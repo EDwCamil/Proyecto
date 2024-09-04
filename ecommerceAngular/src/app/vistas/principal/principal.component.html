@@ -90,7 +90,7 @@
       </div>
     </div>
 
-    <div [routerLink]="['/list-product']" class="cont-info2 mt-2 pontier" >
+    <div [routerLink]="['/list-product']" class="cont-info2 mt-2 pontier">
       <div class="info col-6">
         <h6>Preciso bajos</h6>
         <h3>
@@ -134,8 +134,56 @@
 
 
   <!--ZONA DE DESCUENTOS-->
-  <div>
-
+  <div class="contentOff">
+    <body>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+        <div class="bg-pink-200 p-4 rounded-lg flex flex-col justify-between">
+          <img src="assets/tvOff.png" alt="Samsung TV" class="mb-4">
+          <div>
+            <h2 class="text-xl font-bold">SAMSUNG</h2>
+            <p>en todos los productos</p>
+            <p class="font-bold">Hasta un 50% de descuento</p>
+            <button class="mt-4 bg-blue-900 text-white py-2 px-4 rounded">Ir a comprar</button>
+          </div>
+        </div>
+        <div class="bg-zinc-200 p-4 rounded-lg flex flex-col justify-between">
+          <img src="assets/lavaOff.png" alt="LG Washing Machine" class="mb-4">
+          <div>
+            <h2 class="text-xl font-bold">LG</h2>
+            <p>en todos los productos</p>
+            <p class="font-bold">Hasta un 30% de descuento</p>
+            <button class="mt-4 bg-blue-900 text-white py-2 px-4 rounded">Ir a comprar</button>
+          </div>
+        </div>
+        <div class="bg-teal-400 p-4 rounded-lg flex flex-col justify-between">
+          <img src="assets/pcgamer.png" alt="ASUS Laptop" class="mb-4">
+          <div>
+            <h2 class="text-xl font-bold">ASUS</h2>
+            <p>en todos los productos</p>
+            <p class="font-bold">Hasta un 20% de descuento</p>
+            <button class="mt-4 bg-blue-900 text-white py-2 px-4 rounded">Ir a comprar</button>
+          </div>
+        </div>
+        <div class="bg-zinc-100 p-4 rounded-lg flex flex-col justify-between md:col-span-2 lg:col-span-1 offProduct">
+          <img src="assets/modaOff.png" alt="Fashion Model" class="mb-4">
+          <div>
+            <h2 class="text-xl font-bold">LA MEJOR MODA</h2>
+            <p>Hasta un 50% de descuento</p>
+            <p>en todos los productos</p>
+            <button class="mt-4 bg-blue-900 text-white py-2 px-4 rounded">COMPRAR AHORA</button>
+          </div>
+        </div>
+        <div class="bg-teal-200 p-4 rounded-lg flex flex-col justify-between offProduct1">
+          <img src="assets/motorola.png" alt="Motorola Phone" class="mb-4 imgMoto">
+          <div>
+            <h2 class="text-xl font-bold">MOTOROLA</h2>
+            <p>Hasta un 50% de descuento</p>
+            <p>en todos los productos</p>
+            <button class="mt-4 bg-blue-900 text-white py-2 px-4 rounded">COMPRAR AHORA</button>
+          </div>
+        </div>
+      </div>
+    </body>
   </div>
 </div>
 <app-footer></app-footer>
